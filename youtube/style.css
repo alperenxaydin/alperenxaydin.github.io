@@ -1,0 +1,444 @@
+
+
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
+    margin-inline: 20px;
+    position: fixed;
+    height: 56px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.header-sol {
+    display: inline-flex;
+}
+
+.header-sol img {
+    cursor: pointer;
+}
+
+.header-sol button{
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.header-sol button:hover{
+    background: rgb(67, 67, 67);
+}
+
+.header-orta {
+    display: flex;
+    gap: 20px;
+}
+
+.header-orta-search {
+    position: relative;
+    display: inline-flex;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.header-orta-search input {
+    width: 400px;
+    padding-left: 20px;
+    height: 40px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+
+
+
+.header-orta-search input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+
+#search-gizli-icon {
+    position: absolute;
+    color: white;
+    left: 15px;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-orta-search:has(input:focus) #search-gizli-icon {
+    display: block;
+}
+
+.header-orta-search:has(input:focus)  {
+    padding-left: 30px;
+    margin: 0 !important;
+}
+
+
+.header-orta-search {
+    margin-left: 30px;
+}
+
+
+.header-orta-search input:focus{
+    border-color: rgb(77, 77, 250) !important;
+
+}
+
+
+.header-orta-search button {
+    border-radius: 0 40px 40px 0;
+    background: rgb(64, 64, 64);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-left: 1px solid grey;
+    cursor: pointer;
+}
+
+
+.header-orta-mik button{
+    border: none;
+    color: white;
+    background: none;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.header-orta-mik button:hover{
+    background: gray;
+}
+
+
+.header-sag {
+    display: inline-flex;
+}
+
+
+.header-sag-olustur {
+    border-radius: 15px;
+    background: rgb(49, 49, 49);
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-sag-olustur:hover{
+    background: rgb(67, 67, 67);
+}
+
+.header-sag-bell {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.header-sag-bell:hover {
+    background: rgb(67, 67, 67);
+}
+
+.header-sag img {
+    height: 35px;
+    cursor: pointer;
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+nav {
+    background: none;
+    width: 230px;
+    overflow-y: auto;
+    position: fixed;
+    height: 100vh;
+    padding-bottom: 10px;
+    top: 56px;
+}
+
+nav::-webkit-scrollbar {
+  width: 0;
+}
+
+
+nav:hover::-webkit-scrollbar {
+  width: 6px;
+}
+
+nav:hover::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+
+
+
+nav div{
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+nav div h2{
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+nav div button{
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav div button span {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+nav div button:hover{
+    background: gray;
+}
+
+nav div button i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.nav-abone-div img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+
+
+.nav-telifler-div a {
+    text-decoration: none;
+    color: #c4c4c4;
+}
+
+.nav-telifler-div p {
+    color: #aaa;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+
+
+main {
+    margin-left: 230px;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 100px;
+}
+
+.main-buttonlar {
+    position: fixed;
+    margin-top: 56px;
+    top: 0;
+    right: 50;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
+    display: flex;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.main-buttonlar button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#main-ana-button {
+    background: white;
+    color: black;
+}
+
+
+.videolarin-tamami {
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 eşit sütun */
+    gap: 20px;
+}
+
+.videolar-kutu {
+    background: none;
+    margin-bottom: 20px;
+}
+
+
+
+.video-kutu-ust img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-kutu-alt{
+    display: flex;
+    padding: 10px;
+}
+
+.video-kutu-alt-sol img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.video-kutu-alt-sag h2 {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.video-kutu-alt-sag {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.video-kutu-alt-sag p {
+    margin: 0;
+    color: #7e7e7e;
+    cursor: pointer;
+}
+
+.video-kutu-alt-sag i{
+    font-size: 15px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    nav {
+        display: none;    
+    }
+    main {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .videolarin-tamami {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .videolarin-tamami {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ozel-buton {
+    background: rgba(0,0,0,.1);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+
+.ozel-buton.ikon-butonu {
+    width: 30px;
+    padding: 0;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.ozel-buton:hover {
+    background: rgba(0,0,0,.3);
+}
+
+.ozel-buton.yazi-ve-ikon {
+display: inline-flex;
+gap: 10px;
+align-items: center;
+}
