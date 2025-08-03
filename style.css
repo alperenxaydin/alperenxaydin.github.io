@@ -94,7 +94,7 @@ a:hover::after {
 @media (max-width: 800px) {
     .links {
         flex-direction: column;
-        pointer-events: none;
+        
     }
     
     .cart {
