@@ -1,0 +1,396 @@
+
+body {
+    margin: 0;
+    background-color: rgb(13, 13, 46);
+    position: relative;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+
+header {
+    height: 100vh;    
+    background-color: none;
+    color: white;
+    position: fixed;
+    left: 0;
+    padding-left: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    margin-left: 50%;
+    margin-top: 100px;
+    width: 50%;
+    background: none;
+    display: flex;
+    margin-right: 330px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.header-h {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-h h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.header-h h2 {
+    margin: 0;
+}
+
+.header-h p {
+    font-size: 17px;
+    max-width: 300px;
+    color: rgb(173, 173, 173);
+}
+
+.header-ul ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header-ul li {
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-ul li .aktif-li {
+    color: white;
+}
+
+.header-ul div {
+    width: 30px;
+    height: 1px;
+    background-color: gray;
+    margin-right: 8px;
+}
+
+
+.header-ul .aktif-div {
+    width: 50px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 8px;
+}
+
+.header-links {
+    display: flex;
+    gap: 17px;
+    margin-top: 350px;
+}
+
+.header-links i {
+    font-size: 25px;
+    color: rgb(154, 154, 154);
+    cursor: pointer;
+}
+
+.header-links i:hover {
+    color: white;
+}
+
+.main-p {
+    font-size: 17px;
+    color: rgb(164, 164, 164);
+    margin-bottom: 100px;
+}
+
+.blue-a {
+    text-decoration: none;
+    color: white;
+    transition: 0.6s all ease;
+}
+
+.blue-a:hover {
+    color: rgb(54, 160, 196);
+}
+
+
+
+
+.kartlar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kart {
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.4s all ease;
+
+}
+
+.kart:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.kart:hover h1 {
+    color: rgb(0, 255, 204);
+}
+
+.kart:hover .kart-i-div i {
+    color: rgb(0, 255, 204);
+    left: 10px;
+}
+
+.kart-sol p {
+    white-space: nowrap;
+    margin: 0;
+    color: rgb(153, 153, 153);
+    font-size: 13px;
+}
+
+.kart-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kart-main h1 {
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.kart-main h2 {
+    margin: 0;
+    color: rgb(130, 141, 140);
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kart-main p {
+    margin: 0;
+    color: rgb(200, 200, 200);
+}
+
+
+.kart-buttonlar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.kart-buttonlar button {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: none;
+    background: rgb(5, 100, 81);
+    color: rgb(0, 255, 204);
+    cursor: pointer;
+}
+
+.kart-h1-div {
+    display: flex;
+}
+
+.kart-i-div {
+    width: 35px;
+    height: 25px;
+    position: relative;
+}
+
+.kart-i-div i {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: white;
+    transition: 0.4s all ease;
+}
+
+.kart-linkler {
+    display: flex;
+    gap: 10px;
+}
+
+.kart-linkler a {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.kart-linkler a:hover {
+    color: rgb(0, 255, 204);
+}
+
+.kart-linkler i {
+    margin-right: 5px;
+}
+
+
+.kartlar-bosluk {
+    padding: 30px;
+    color: white;
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.bosluk-i-div {
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+
+.bosluk-i-div i {
+    left: 0px;
+    bottom: 2px;
+    transition: 0.4s all ease;
+    position: absolute;
+}
+
+.kartlar-bosluk:hover {
+    color: rgb(0, 255, 204);
+}
+
+.kartlar-bosluk:hover i {
+    left: 10px;
+}
+
+.kartlar-bosluk h1 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.kart-sol img {
+    width: 129px;
+    height: 73px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+.kart:hover img {
+    border-color: rgba(255, 255, 255, 0.39);
+}
+
+.project:hover  h1 {
+    border-bottom: 2px solid rgb(0, 255, 204);;
+}
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer p {
+    font-size: 17px;
+    color: rgb(164, 164, 164);
+    max-width: 500px;
+}
+
+
+
+.donen-nesne i {
+    color: rgb(0, 255, 128);
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.4s all ease;
+    animation: don 2s linear infinite;
+}
+
+.donen-nesne i:hover {
+    bottom: 50px;
+}
+
+@keyframes don {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+
+@media (max-width: 1550px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-ul {
+        display: none;
+    }
+    header {
+        position: relative;
+        padding-left: 20px;
+        justify-content: flex-start;
+        height: auto;
+        gap: 20px;
+    }
+    .header-links {
+        margin: 0;
+    }
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    .main-p {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .kart {
+        font-size: 13px;
+        padding: 0 0 0 10px; 
+        pointer-events: none;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .donen-nesne {
+        display: none;
+    }
+
+    .kartlar-bosluk {
+        margin: 0;
+        border-bottom: solid 1px black;
+    }
+
+}
+
+
