@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dailymotion</title>
+    <link rel="stylesheet" href="../dailymotion/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <div class="header-logo">
+            <h1>DAILYMOTION</h1>
+        </div>
+
+        <div class="input arama-tutucu">
+            <button id="arama-kapat" class="button-icon sadece-mobil-gorunsun-flex"><i class="fa fa-chevron-left"></i></button>
+            <div class="normal-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search" id="input">
+                <div class="arama-gecmisi">
+                    <div class="arama-gecmisi-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span class="text">gecmis 1</span>
+                        <button>x</button>
+                    </div>
+                    <div class="arama-gecmisi-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span class="text">gecmis 2</span>
+                        <button>x</button>
+                    </div>
+                    <div class="arama-gecmisi-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span class="text">gecmis 3</span>
+                        <button>x</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-oturum-div">
+                <button id="arama-butonu" class="button-icon sadece-mobil-gorunsun-flex"><i class="fa fa-search"></i></button>
+            <button id="button-login"><i class="fa-solid fa-user"></i>Log In</button>
+        </div>
+
+    </header>
+
+
+    
+    <div id="login-div">
+
+    </div>
+
+
+    <nav id="nav">
+        <div class="nav-header">
+            <div class="nav-title">Nav title</div>
+            <button id="nav-close" class="button-icon"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="nav-ana-div">
+            <div class="nav-link"> <i class="fa-solid fa-house"></i> Sizin icin</div>
+            <div class="nav-link"> <i class="fa-solid fa-bolt"></i> Kesfet</div>
+            <div class="nav-link"> <i class="fa-solid fa-user"></i> Takipler</div>
+            <button class="button-renkli">Oturum Ac</button>
+        </div>
+        <div class="nav-div">
+            <h2>POPULER</h2>
+            <div class="nav-link-div">
+                <img src="euronewspp.jpg" alt=""> <p>euronews(Turkce)</p> <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="nav-link-div">
+                <img src="euronewspp.jpg" alt=""> <p>euronews(Eng)</p> <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="nav-link-div">
+                <img src="euronewspp.jpg" alt=""> <p>euronews(Rus)</p> <i class="fa-solid fa-circle-check"></i>
+            </div>
+            
+        </div>
+        <div class="nav-div">
+            <h2>Kategoriler</h2>
+            <div class="nav-link-div">
+                <div class="link-div-icon">🗞</div><p>Haberler</p>
+            </div>
+            <div class="nav-link-div">
+                <div class="link-div-icon">🎥</div><p>Kisa film</p>
+            </div>
+            <div class="nav-link-div">
+                <div class="link-div-icon">📺</div><p>TV</p>
+            </div>
+            <div class="nav-link-div">
+                <div class="link-div-icon">😹</div><p>Eglence</p>
+            </div>
+            <div class="nav-link-div">
+                <div class="link-div-icon">🥇</div><p>Spor</p>
+            </div>
+            <div class="nav-link-div">
+                <div class="link-div-icon">🎵</div><p>Music</p>
+            </div>
+        </div>
+
+        <div class="nav-div-alt">
+            <div class="nav-a-div">
+                <a>Hakkında</a>
+                <a>Basın</a>
+                <a>Blog</a>
+                <a>İşler</a>
+                <a>Reklam verenler</a>
+                <a>Dailymotion Pro</a>
+                <a>Geliştiriciler</a>
+                <a>Yardım Merkezi</a>
+            </div>
+            <div class="nav-a-div-kontrol">
+                <a>Gizlilik ve Çerez Politikası</a>
+                <a>Erişilebilirlik</a>
+                <a>Koşullar</a>
+                <a>Yasal bildirimler</a>
+                <a>Tüm videolar</a>
+
+                    <div class="nav-div-ackapa">
+                        <button id="ackapa-button">Hassas icerikleri gizle :</button>
+                        <span id="acik" class="active">Acik</span>
+                        <span id="kapali">Kapali</span>
+                    </div>
+                    <div class="konum-secme-div">
+                        <button id="konum-button">Konum :</button>
+                        <span id="secili-konum">Türkiye</span>
+                    </div>
+                    
+            <p class="nav-alt-yazi">© 2025 Dailymotion</p>
+        </div>
+
+
+    </nav>
+
+    <div id="konum-div">
+        <h3>Konum</h3>
+        <ul>
+            <li class="konum-sec">Türkiye</li>
+            <li class="konum-sec">Almanya</li>
+            <li class="konum-sec">Fransa</li>
+            <li class="konum-sec">ABD</li>
+        </ul>
+    </div>
+
+
+    <aside>
+        <img src="../dailymotion/reklam fotosu.png" alt="reklam">
+        <div class="aside-div">
+            <h2>Daha fazla videolar</h2>
+            <p>more perspectives</p>
+            <button>Uygulamayı yükleyin</button>
+        </div>
+    </aside>
+
+    <main>
+        <article>
+            <div class="artic-header">
+                <img src="../dailymotion/euronewspp.jpg" alt="euronewspp">
+                <span>euronews (Turkce) <i class="fa-solid fa-circle-check"></i></span>
+                <button class="button-renkli">Takip et</button>
+            </div>
+            <div class="artic-text">
+                <p>Gabrielle Kasırgası, Portekiz’in Azor Adaları’nı vurdu: Evlerde hasar oluştu</p>
+            </div>
+            <div class="artic-main">
+                <div class="artic-content">
+                    <img src="../dailymotion/euronewsmainimg.jpg" alt="">
+                </div>
+                <div class="artic-interaction">
+                    <button class="like button-sade"><i class="fa-solid fa-heart"></i></button>
+                    <button class="save button-sade"><i class="fa-solid fa-bookmark"></i></button>
+                    <button class="send button-sade"><i class="fa-solid fa-share"></i></button>
+                </div>
+            </div>
+        </article>
+
+
+        <article>
+            <div class="artic-header">
+                <img src="../dailymotion/euronewspp.jpg" alt="euronewspp">
+                <span>euronews (Eng) <i class="fa-solid fa-circle-check"></i></span>
+                <button class="button-renkli">Follow</button>
+            </div>
+            <div class="artic-text">
+                <p>Financial workers are on strike in South Korea</p>
+            </div>
+            <div class="artic-main">
+                <div class="artic-content">
+                    <img src="../dailymotion/euronewsmainimg2.jpg" alt="">
+                </div>
+                <div class="artic-interaction">
+                    <button class="like button-sade"><i class="fa-solid fa-heart"></i></button>
+                    <button class="save button-sade"><i class="fa-solid fa-bookmark"></i></button>
+                    <button class="send button-sade"><i class="fa-solid fa-share"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="artic-header">
+                <img src="../dailymotion/euronewspp.jpg" alt="euronewspp">
+                <span>euronews (Turkce) <i class="fa-solid fa-circle-check"></i></span>
+                <button class="button-renkli">Takip et</button>
+            </div>
+            <div class="artic-text">
+                <p>Gabrielle Kasırgası, Portekiz’in Azor Adaları’nı vurdu: Evlerde hasar oluştu</p>
+            </div>
+            <div class="artic-main">
+                <div class="artic-content">
+                    <img src="../dailymotion/euronewsmainimg.jpg" alt="">
+                </div>
+                <div class="artic-interaction">
+                    <button class="like button-sade"><i class="fa-solid fa-heart"></i></button>
+                    <button class="save button-sade"><i class="fa-solid fa-bookmark"></i></button>
+                    <button class="send button-sade"><i class="fa-solid fa-share"></i></button>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="artic-header">
+                <img src="../dailymotion/euronewspp.jpg" alt="euronewspp">
+                <span>euronews (Rus) <i class="fa-solid fa-circle-check"></i></span>
+                <button class="button-renkli">Следить</button>
+            </div>
+            <div class="artic-text">
+                <p>Стармер призвал Лейбористскую партию к единству, чтобы отразить угрозу со стороны Реформаторской партии Великобритании Найджела Фараджа.</p>
+            </div>
+            <div class="artic-main">
+                <div class="artic-content">
+                    <img src="../dailymotion/rusimg.jpg" alt="">
+                </div>
+                <div class="artic-interaction">
+                    <button class="like button-sade"><i class="fa-solid fa-heart"></i></button>
+                    <button class="save button-sade"><i class="fa-solid fa-bookmark"></i></button>
+                    <button class="send button-sade"><i class="fa-solid fa-share"></i></button>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+
+
+    
+    <script src="https://kit.fontawesome.com/92d03d5027.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

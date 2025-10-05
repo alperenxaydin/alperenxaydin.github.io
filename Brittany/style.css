@@ -295,8 +295,18 @@ main {
     border-color: rgba(255, 255, 255, 0.39);
 }
 
+.project i{
+    bottom: 10px;
+}
+
+.project h1{
+    margin: 0;
+    margin-bottom: 2px;
+}
+
 .project:hover  h1 {
     border-bottom: 2px solid rgb(0, 255, 204);;
+    margin-bottom: 0;
 }
 
 
@@ -324,7 +334,7 @@ footer p {
 }
 
 .donen-nesne i:hover {
-    bottom: 50px;
+    bottom: 40px;
 }
 
 @keyframes don {
