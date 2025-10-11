@@ -1,36 +1,6 @@
 
 
-document.querySelector('.header-logo').addEventListener('click', () => {
-    document.querySelector('#nav').classList.add('active');
-})
 
-
-document.querySelector('#nav-close').addEventListener('click', () => {
-    document.querySelector('#nav').classList.remove('active');
-})
-
-
-document.addEventListener('click', (e) => {
-    const aramaCubugu = document.querySelector('.arama-tutucu');
-    if (
-        aramaCubugu.classList.contains('active') &&
-        !aramaCubugu.contains(e.target) &&
-        e.target !== document.querySelector('#arama-butonu')
-    ) {
-        aramaCubugu.classList.remove('active');
-    }
-});
-
-
-document.querySelector('#arama-butonu').addEventListener('click', (e) => {
-    e.stopPropagation();
-    document.querySelector('.arama-tutucu').classList.add('active');
-})  
-
-document.querySelector('#arama-kapat').addEventListener('click', (e) => {
-    e.stopPropagation();
-    document.querySelector('.arama-tutucu').classList.remove('active');
-})
 
 
 const acikkapalibutton = document.getElementById('ackapa-button');
@@ -65,6 +35,18 @@ const loginbtn = document.getElementById("button-login");
 const logindiv = document.getElementById("login-div");
 
 loginbtn.addEventListener("click" , () => {
-    logindiv.classList.toggle("active");
+    logindiv.classList.add("active");
 });
+
+const loginkapa = document.getElementById("login-kapat");
+
+loginkapa.addEventListener("click" , () => {
+    logindiv.classList.remove("active");
+});
+
+
+
+
+
+
 

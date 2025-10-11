@@ -1,17 +1,16 @@
 body {
     --siyah: #23242e;
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
     background: gray;
-        font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .cart {
@@ -94,7 +93,7 @@ a:hover::after {
 @media (max-width: 800px) {
     .links {
         flex-direction: column;
-        
+        align-items: center;
     }
     
     .cart {
@@ -103,7 +102,7 @@ a:hover::after {
     }
     
     footer {
-        border: none;
+        display: none;
     }
 
 }

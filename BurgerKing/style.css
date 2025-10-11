@@ -1,0 +1,716 @@
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 242, 209);
+}
+
+body p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+header {
+    border-bottom: 1px solid rgba(130, 130, 130, 0.5);
+    background-color: rgb(255, 242, 209);
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-img-div img {
+    width: 130px;
+    height: auto;
+}
+
+.header-cart-button {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    color: gray;
+    cursor: not-allowed;
+    background: none;
+}
+
+
+
+
+
+.container-cart {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    margin-top: 90px;
+    height: 100%;
+    margin-bottom: 75px;
+}
+
+.main-ust {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.main-ust div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-ust h2 {
+    color: rgb(57, 42, 3);
+    font-size: 60px;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+.main-ust-imgdiv p {
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.main-ust-imgdiv {
+    overflow: hidden;
+}
+
+.main-ust-imgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-ust-buttonlar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 242, 209);
+    border-top: 1px solid rgba(130, 130, 130, 0.5);
+    z-index: 1000;
+
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    color: gray;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.footer-active-div {
+    color: black;
+}
+
+.footer-active-cizgi {
+    height: 3px;
+    background-color: black;
+    width: 100%;
+}
+
+
+
+
+
+
+.cart-two {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+.cart-img {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.cart-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.cart-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 0 15px 15px;
+    background: white;
+    padding: 15px;
+}
+
+.cart-main-ust {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-main-ust h2 {
+    font-weight: bold;
+    color: rgb(104, 78, 1);
+    font-size: 28px;
+}
+
+.cart-main-ust p {
+    color: rgb(104, 78, 1);
+    font-size: 14px;
+    height: 60px;
+}
+
+.cart-main-alt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-main-alt a {
+    color: rgb(104, 78, 1);
+}
+
+
+
+
+
+
+
+
+
+.container-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.main-footer {
+    width: 100%;
+    background-color: rgb(230, 214, 175);
+    margin-top: 100px;
+}
+
+.main-footer-top {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.main-footer-img {
+    position: relative;
+}
+
+.main-footer-img img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+}
+
+.main-footer-document {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+}
+
+.main-footer-document h2 {
+    color: rgb(57, 42, 3);
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.main-footer-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-footer-buttons button {
+    background: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.main-footer-buttons button i {
+    font-size: 40px;
+}
+
+.googleplay i {
+    font-size: 30px !important;
+}
+
+.main-footer-buttons button div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-footer-buttons button div h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.main-footer-buttons button div p {
+    font-size: 12px;
+}
+
+.main-footer-bottom {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(78, 54, 5);
+    padding-bottom: 71px;
+}
+
+.main-footer-bottom p {
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+#login {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1200;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+#login.active {
+    transform: translateY(0);
+}
+
+#login-kapa {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+
+
+.login-text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.login-text h2 {
+    color: rgb(81, 42, 0);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login-text p {
+    font-size: 20px;
+    color: rgb(81, 42, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-buttons button {
+    background: none;
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-buttons button:hover {
+    background: rgba(197, 197, 197, 0.135);
+}
+
+.login-buttons button i {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1300;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 10px 0px 30px gray;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+#sidebar-kapa {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: none;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+}
+
+.sidebar-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sidebar-main-h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-main-h2 h2 {
+    color: rgb(81, 42, 0);
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+}
+
+.sidebar-buyukh2 {
+    font-size: 40px !important; 
+}
+
+.sidebar-main button {
+    padding: 10px 80px;
+    background: rgb(132, 0, 0);
+    border: none;
+    border-radius: 15px;
+}
+
+.sidebar-main a {
+    color: rgb(132, 0, 0);
+}
+
+.sidebar-document {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-links h2 {
+    color: rgb(132, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.sidebar-link {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(130, 87, 0);
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(130, 87, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-kirmizi {
+    padding: 20px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-kirmizi:hover {
+    background: rgb(198, 1, 1);
+}
+
+
+
+.button-sade {
+    padding: 20px;
+    background: none;
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-sade:hover {
+    color:  rgb(255, 2, 2);
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgba(188, 188, 188, 0.186);
+}
+
+
+
+.button-icon {
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .cart-two {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-cart {
+        max-width: 600px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .main-ust {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-footer {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .main-footer-document {
+        align-items: center;
+    }
+
+    .main-footer-document h2 {
+        font-size: 30px;
+    }
+
+    .main-footer-buttons button {
+        width: 165px;
+        height: 50px;
+    }
+
+    .main-footer-buttons button div h2 {
+        font-size: 12px;
+    }
+
+    .main-footer-document p {
+        text-align: center;
+    }
+
+    .main-footer-img {
+        display: none;
+    }
+
+    .cart-two {
+        padding: 0;
+    }
+    .cart-img img{
+        height: 246px;
+    }
+
+    .main {
+        margin-bottom: 0px;
+    }
+
+    .main-footer {
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .header-cart-button {
+        display: none;
+    }
+    
+    
+}
