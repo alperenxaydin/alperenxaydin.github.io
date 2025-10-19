@@ -480,3 +480,91 @@ nav {
 
 
 
+
+
+
+main {
+    padding-top: 60px;
+}
+
+
+.main-ust {
+    width: 100%;
+    background-image: url(telefonbackground.webp);
+    position: relative;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.main-ust-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.main-ust-sol-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    background-color: rgba(190, 190, 190, 0.621);
+    color: rgba(255, 255, 255, 0.447);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}   
+
+.main-ust-sol-button:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.main-ust-sag-button {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    background-color: rgba(190, 190, 190, 0.621);
+    color: rgba(255, 255, 255, 0.447);
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.main-ust-sag-button:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.main-ust-icerik {
+    padding-bottom: 140px;
+    padding-top: 140px;
+}
+
+.main-ust-icerik p {
+    font-size: 18px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-ust-icerik button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.main-ust-icerik button:hover {
+    background: rgb(39, 39, 39);
+}
+
+
