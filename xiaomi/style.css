@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(245, 244, 244);
 }
-
+        
 
 
 
@@ -551,7 +552,529 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-ust-icerik button {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    max-width: 1300px;
+    margin: 150px auto;
+}
+
+.section-h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-cart-basliklar {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cart-basliklar button {
+    border: none;
+    background: none;
+    padding: 0;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.main-cart-baslik-active {
+    color: rgb(255, 106, 0);
+    border-bottom: 2px solid rgb(255, 106, 0) !important;
+}
+
+.main-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.main-cart-main {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main-cart-main:hover img {
+    transform: scale(1.02);
+}
+
+.main-cart-main img {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-cart-main-yazi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 0 20px 20px 0;
+}
+
+.main-cart-main-yazi h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main-cart-main-yazi p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main-cart-main-yazi button {
+    margin: 0 !important;
+}
+
+.main-cart-imgs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.main-cart-img {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 40px 67px;
+    background-color: rgb(248, 246, 246);
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.main-cart-img:hover img {
+    transform: translateY(-10px);
+}
+
+.main-cart-img img {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.main-cart-img h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.main-cart-img p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-ust {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.article-baslik {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-ust-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 75%;
+}
+
+.article-ust-buttons button {
+    border: none;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background: rgb(223, 223, 223);
+    border-radius: 80px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.article-ust-buttons button:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.article-carts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.article-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.article-cart:hover img {
+    transform: scale(1.1);
+}
+
+.article-cart-img img {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.article-cart-document {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 0 30px;
+}
+
+.article-cart-document h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.article-cart-document p {
+    font-size: 16px;
+    margin: 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.support-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.support {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-baslik h2 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.support-carts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.support-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.support-cart:hover i {
+    color: black;
+}
+
+.support-cart i {
+    transition: all 0.4s ease-in-out;
+    font-size: 60px;
+    color: gray;
+}
+
+.support-cart h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.support-cart p {
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding-top: 30px;
+}
+
+footer a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-document {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.footer-document a {
+    color: rgb(166, 166, 166);
+    text-decoration: none;
+}
+
+.footer-document a:hover {
+    text-decoration: underline;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.footer-ul h2 {
+    font-size: 17px;
+}
+
+.footer-follow {
+    width: 100%;
+}
+
+.footer-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px rgb(191, 191, 191);
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.footer-alt-yazi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-alt a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-alt a:hover {
+    text-decoration: underline;
+}
+
+.footer-alt-yazi div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.duz-cizgi {
+    width: 1px;
+    background-color: white;
+    height: 20px;
+}
+
+.footer-follow h2 {
+    font-size: 20px;
+}
+
+.footer-follow p {
+    font-weight: bold;
+}
+
+.footer-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-media i {
+    font-size: 28px;
+    color: rgb(208, 208, 208);
+    cursor: pointer;
+}
+
+.footer-media i:hover {
+    color: white;
+}
+
+.footer-input {
+    width: 400px;
+    position: relative;
+    display: flex;
+}
+
+.footer-input input {
+    width: 100%;
+    padding: 20px;
+    background: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-input i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-learn {
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
@@ -563,7 +1086,7 @@ main {
     margin-top: 50px;
 }
 
-.main-ust-icerik button:hover {
+.button-learn:hover {
     background: rgb(39, 39, 39);
 }
 
