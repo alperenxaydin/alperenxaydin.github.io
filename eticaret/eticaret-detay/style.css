@@ -1,0 +1,535 @@
+body {
+    margin: 0;
+}
+
+body p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.header-ust-container {
+    display:  flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.header-ust {
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.header-ust-p {
+    display: flex;
+    gap: 20px;
+}
+
+.header-ust-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-ust p {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+
+.header-ust button {
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    padding: 0;
+    background: none;
+    color: rgb(160, 160, 160);
+}
+
+
+
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-img img {
+    width: 200px;
+    height: auto;
+}
+
+.aramacubugu {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 4px solid rgb(221, 221, 221);
+}
+
+.input-div {
+    position: relative;
+}
+
+.input-div i {
+    position: absolute;
+    font-size: 16px;
+    color: rgb(121, 121, 121);
+}
+
+.input-div input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 35px;
+    padding-right: 30px;
+}
+
+.input-div input:focus {
+    border: none;
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.input-div input::-webkit-clear-button,
+.input-div input::-webkit-search-cancel-button,
+.input-div input::-ms-clear,
+.input-div input::-ms-reveal {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#input-arama {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#input-mik {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.aramacubugu-button {
+    border: none;
+    background: rgb(1, 1, 105);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.aramacubugu-button:hover {
+    background: rgb(0, 0, 181);
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-buttons button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-buttons button i {
+    font-size: 20px;
+}
+
+
+
+
+
+nav {
+    background: rgb(0, 0, 121);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-left: 1px solid rgb(71, 71, 162);
+    border-top: 1px solid rgb(71, 71, 162);
+}
+
+.nav-item-son a {
+    border-right: 1px solid rgb(71, 71, 162);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-item:hover .gizli-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item:hover a {
+    background: white;
+    color: rgb(0, 0, 121);
+}
+
+.gizli-item {
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    top: 100%;
+}
+
+.gizli-item-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: none !important;
+    border: 1px solid rgb(0, 0, 121);
+    border-radius: 0 0 20px 20px;
+}
+
+.gizli-telefon {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.gizli-telefon-a {
+    display: flex;
+    gap: 50px;
+}
+
+.gizli-telefon-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gizli-telefon-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.gizli-telefon-a h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(45, 45, 113);
+    cursor: pointer;
+}
+
+.gizli-telefon-a a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.gizli-telefon-a a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+aside {
+    width: 100%;
+    border-top: 1px solid rgb(215, 215, 215);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.link-cizgi {
+    height: 40px;
+    width: 1px;
+    background-color: black;
+}
+
+.link-div h2 {
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+.link-div p {
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.link-div:hover h2 {
+    font-size: 18px;
+}
+
+.link-div:hover p {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer p {
+    cursor: pointer;
+    color: rgb(110, 110, 110);
+}
+
+.footer p:hover {
+    color: rgb(0, 0, 0);
+}
+
+.footer-input input {
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+.main-ust {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    padding: 10px 0;
+
+}
+
+.main-ust a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-ust a i {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-ust i {
+    color: gray;
+    font-size: 12px;
+}
+
+
+
+section {
+    display: flex;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.mini-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-img {
+    border: 1px solid rgb(153, 153, 153);
+    cursor: pointer;
+}
+
+.mini-img img {
+    width: 80px;
+    height: auto;
+}
+
+.section-img {
+    padding: 0 30px;
+    border: 1px solid rgb(209, 209, 209);
+    cursor: pointer;
+}
+
+.section-document {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.section-baslik {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    padding-bottom: 10px;
+}
+
+.section-baslik h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.section-baslik p {
+    font-size: 14px;
+    display: flex;
+}
+
+.section-baslik div {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+}
+
+.section-fiyat h2 {
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.section-fiyat {
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.section-sepet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-sepet button {
+    cursor: pointer;
+}
+
+.sepet-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sepet-adet {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(241, 239, 239);
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.sepet-adet button {
+    border: none;
+    background: rgb(241, 239, 239);
+    padding: 15px;
+}
+
+.sepet-ekle-button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 20px;
+    background: blue;
+    color: white;
+}
+
+.sepet-begeni-button {
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    color: gray;
+}
+
+
+
+
+
+
